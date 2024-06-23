@@ -1,0 +1,243 @@
+/* contact us */
+#side-content{
+    width: 98%;
+    display: flex;
+    justify-content: start
+}
+#side-content i{
+    font-size: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+    color:  rgb(227, 224, 224);
+}
+#side-content a,b{
+    margin-left: 20px;
+}
+.contact{
+    background-color: yellowgreen;
+    width: 98%;
+    height:500px;
+    border-radius: 30px;
+}
+.contact p{
+    display: flex;
+    justify-content: center;
+}
+.contact div{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.contact div ul{
+    list-style: none;
+    margin-right: 30px;
+}
+.contact span{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.fa-solid{
+  font-size: 25px;
+}
+.contact div ul li{
+    margin-bottom: 5px;
+    margin-left: 50px;
+}
+#head-1{
+    margin-left: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+.contact a{
+    color: rgb(227, 224, 224);
+}
+/* Help */
+.help{
+    width: 98%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: yellowgreen;
+    margin-top: 30px;
+    border-radius: 20px;
+     position: relative;
+     overflow: hidden;
+}
+select {
+    width: 300px; 
+    height: 45px; 
+    font-size: 15px; 
+    font-weight: bold; 
+    color: #4B0082; 
+    background-color: #E6E6FA;
+    border: 2px solid #4B0082; 
+    border-radius: 10px; 
+    padding: 10px; 
+    margin: 15px; 
+    appearance: none; 
+    outline: none; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    margin-top: 50px;
+   
+}
+
+select:hover {
+    background-color: #D8BFD8; /* Slightly darker lavender on hover */
+    box-shadow: 50px 40px 10px rgba(0, 0, 0, 0.2); 
+
+}
+
+select:focus {
+    border-color: #8A2BE2; /* Bright violet border on focus */
+    box-shadow: 0px 0px 8px rgba(138, 43, 226, 0.5); /* Glowing effect on focus */
+}
+
+select option {
+    color: #4B0082; /* Text color */
+    background-color: #E6E6FA; /* Background color */
+    padding: 10px; /* Padding */
+}
+
+select option:hover {
+    background-color: #D8BFD8; /* Background color on hover */
+}
+
+.moving-gif {
+    position: absolute;
+    bottom: 20px;
+    width: 100px;
+    animation:  9s linear infinite ;
+    animation-name: moveLeftRight;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+.zoro-gif {
+    position: absolute;
+    bottom: 30px;
+    left: 400px; 
+    width: 100px; 
+    animation-name: zoromoveLeftRight;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    rotate: Y 160deg;
+    border-radius: 500px;
+}
+@keyframes moveLeftRight {
+   0%{
+    left: 100px;
+    transition: 1.5s;
+   }
+
+   100%{
+    left:1700px;
+   }
+}
+@keyframes zoromoveLeftRight {
+    0%{
+     left: 0px;
+     transition: 2s;
+    }
+    100%{
+     left:1550px;
+     transition: 2s;
+    }
+ }
+ /* Support */
+ .support {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 98%;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: yellowgreen;
+}
+.support ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 40px;
+}
+.support ul li {
+    margin: 5px 0;
+}
+.support ul li:first-child {
+    font-weight: bold;
+    font-size: large;
+}
+.support button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: white;
+}
+.support button:hover {
+    background-color: #0056b3;
+    scale: 1.1;
+}
+.support button:focus {
+    background-color: #0056b3;
+}
+.support details {
+    width: 800px;
+    margin: 10px 0;
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    margin-right: 40px;
+    margin-left: 30px;
+    border-radius: 30px;
+    
+    
+}
+summary {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+details[open] summary {
+    color: #0056b3;
+}
+.content-wrapper {
+    overflow: hidden;
+    max-height: 10px;
+    transition: max-height 2s ;
+    padding: 0 10px;
+}
+details[open] .content-wrapper {
+    max-height: 500px; /* Adjust this value to fit the actual content */
+   
+}
+.content {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#det-1{
+    border-left: 2px solid black;   
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
