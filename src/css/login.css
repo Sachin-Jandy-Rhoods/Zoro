@@ -1,0 +1,49 @@
+body{
+    animation: login 10s linear 0s infinite ;
+    transition: 3s;
+   position: relative;
+    top: 200px;
+    left: 500px;
+    text-shadow: 30px 30px #dde3dd;
+}
+@keyframes login {
+    0%{
+        background-color: red;
+        scale: 1.1;
+
+    }
+    30%{
+        
+        background-color: green;
+        scale:1.2
+    }
+    50%{
+        
+        background-color: blue;
+        scale: 1.9;
+        rotate: Y -90deg;
+        font-weight: 900;
+        font-size: xx-large;
+    }
+    60%
+    {
+        
+        background-color: blueviolet;
+        scale: 1.5;
+     
+    }
+    80%{
+       
+        background-color: yellow;
+        scale: 1.4;
+        
+    }
+    100%
+    {
+        
+        background-color: yellowgreen;
+        scale: 1;
+        text-shadow: none;
+       
+    }
+}
