@@ -59,6 +59,6 @@ background: radial-gradient(circle, rgba(0,186,44,1) 7%, rgba(0,186,44,1) 47%, r
 }
 
 .card-content button:hover {
-    background-color: #0056b3;
+    background-color: rgb(0,186,44);;
     scale: 1.1;
 }
